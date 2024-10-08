@@ -1,0 +1,11 @@
+name: Webhook Response
+
+on:
+  push:  # This listens for push events
+
+jobs:
+  respond:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print event data
+        run: echo "A push event occurred with the following details: ${{ toJson(github) }}"

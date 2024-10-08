@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTMLFixer - Automated HTML Code Cleaner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>HTMLFixer</h1>
+        <p>Your Automated HTML Code Cleaner</p>
+
+        <form id="htmlForm">
+            <label for="htmlInput">Paste your HTML code here:</label>
+            <textarea id="htmlInput" rows="10" placeholder="Enter your HTML code"></textarea>
+            <button type="submit">Check and Fix Code</button>
+        </form>
+
+        <div id="results">
+            <h2>Correction Suggestions</h2>
+            <ul id="correctionList"></ul>
+        </div>
+
+        <div id="suggestions">
+            <h2>Fixed HTML Code</h2>
+            <pre id="fixedCode"></pre>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

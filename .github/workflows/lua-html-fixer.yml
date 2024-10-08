@@ -1,0 +1,42 @@
+name: Luna HTML Fixer
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  check-html:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Install HTMLHint
+        run: |
+          npm install -g htmlhint  # Install HTMLHint globally
+
+      - name: Run HTML Checker
+        id: html_check  # Give this step an ID to reference later
+        run: |
+          echo "Running HTML checks..."
+          ./check-html.sh || echo "HTML check failed. Exiting with code 1." && exit 1
+
+      - name: Record Event Details
+        run: |
+          echo "Event: ${{ github.event_name }}" >> events.log
+          echo "Repository: ${{ github.repository }}" >> events.log
+          echo "Commit SHA: ${{ github.sha }}" >> events.log
+          echo "Actor: ${{ github.actor }}" >> events.log
+          echo "Timestamp: $(date)" >> events.log
+          echo "HTML Check Status: ${{ steps.html_check.outcome }}" >> events.log
+
+      - name: Upload Event Log
+        uses: actions/upload-artifact@v3
+        with:
+          name: luna-html-fixer-events
+          path: events.log

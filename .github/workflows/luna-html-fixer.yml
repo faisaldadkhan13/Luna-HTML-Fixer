@@ -1,4 +1,8 @@
-name: Luna HTML Fixer
+name: Run HTML Checker
+id: html_check
+run: |
+echo "Running HTML checks..."
+./check-html.sh || { echo "HTML check failed"; exit 1; }
 
 on:
   push:

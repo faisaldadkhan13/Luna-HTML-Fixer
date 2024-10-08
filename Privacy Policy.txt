@@ -1,0 +1,17 @@
+Privacy Policy for Luna HTML Fixer
+
+Effective Date: 08 October 2024
+
+Luna HTML Fixer is an open-source project aimed at improving HTML code quality. We value your privacy and are committed to protecting your personal information. This policy outlines how we handle any data you may provide while using Luna HTML Fixer.
+
+1. Information Collection We do not collect personal information from users of Luna HTML Fixer. The tool operates locally on your device, and no user data is transmitted to us or stored.
+
+2. Usage Data While using Luna HTML Fixer, we may collect anonymous usage data to improve the tool. This data may include information such as the features used, the frequency of use, and performance metrics. This information is not linked to any personal identifiers.
+
+3. Third-Party Links Luna HTML Fixer may contain links to third-party websites. We are not responsible for the privacy practices or content of those sites. We encourage users to read the privacy policies of any third-party sites they visit.
+
+4. Changes to This Privacy Policy We may update this privacy policy from time to time. Any changes will be reflected on this page, and the effective date will be updated accordingly. We encourage users to review this policy periodically.
+
+5. Contact Us If you have any questions about this privacy policy, please feel free to reach out to us at [your contact information or GitHub repository link].
+
+By using Luna HTML Fixer, you agree to the terms of this privacy policy.

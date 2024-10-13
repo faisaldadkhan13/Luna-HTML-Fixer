@@ -3,7 +3,7 @@
   <h1>Luna HTML Fixer</h1>
 
 </head>
-<p> Luna HTML Fixer is a simple, easy-to-use tool designed to help developers identify and fix common HTML issues. With Luna HTML Fixer, you can automatically detect errors in your HTML code and get suggestions for corrections. The tool aims to improve the quality of your HTML, making it cleaner and more consistent.</p>
+<p> Luna HTML Fixer (by Luna OpenLabs) is a simple, easy-to-use tool designed to help developers identify and fix common HTML issues. With Luna HTML Fixer, you can automatically detect errors in your HTML code and get suggestions for corrections. The tool aims to improve the quality of your HTML, making it cleaner and more consistent.</p>
 
 <h1>Features</h1>
 HTML Validation: Luna HTML Fixer scans your HTML code to identify common issues like unclosed tags, missing attributes, or improper nesting.
